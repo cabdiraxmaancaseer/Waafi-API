@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "4c98ce94-7d74-40ae-87db-eeeecbea4987",
+		"name": "WEATHER API SAMPLE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10729491"
+	},
+	"item": [
+		{
+			"name": "https://api.openweathermap.org/data/2.5/weather?lat=2.0469&lon=45.3182&apikey=YOUR API KEY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=2.0469&lon=45.3182&apikey=YOUR API KEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "2.0469"
+						},
+						{
+							"key": "lon",
+							"value": "45.3182"
+						},
+						{
+							"key": "apikey",
+							"value": "YOUR API KEY"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
