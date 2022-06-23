@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "3d787c35-dddb-4ba5-970c-b020b80ccd85",
+		"name": "waafiApiTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10729491"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"schemaVersion\": \"1.0\",\n   \"requestId\": \"343453453\",\n   \"timestamp\": \"2022-06-23 Africa\",\n   \"channelName\": \"WEB\",\n   \"serviceName\": \"API_PURCHASE\",\n\n   \"serviceParams\": {\n      \"merchantUid\": \"{{merchantUid}}\",\n      \"apiUserId\": \"{{apiUserId}}\",\n      \"apiKey\": \"{{apiKey}}\",\n      \"paymentMethod\": \"MWALLET_ACCOUNT\",\n\n    \"payerInfo\":{\n      \"accountNo\"     : \"252634861210\"\n    },\n      \"transactionInfo\": {\n         \"referenceId\": \"23235\",\n         \"invoiceId\": \"12312\",\n         \"amount\": \"0.1\",\n         \"currency\": \"USD\",\n         \"description\": \"wan diray\"\n      }\n   }\n}"
+				},
+				"url": {
+					"raw": "https://api.waafipay.net/asm",
+					"protocol": "https",
+					"host": [
+						"api",
+						"waafipay",
+						"net"
+					],
+					"path": [
+						"asm"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiKey",
+			"value": "API-xxxxxxxxxxxx",
+			"type": "string"
+		},
+		{
+			"key": "apiUserId",
+			"value": "xxxxxxx",
+			"type": "string"
+		},
+		{
+			"key": "merchantUid",
+			"value": "xxxxxxx",
+			"type": "string"
+		}
+	]
+}
